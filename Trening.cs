@@ -14,5 +14,19 @@ namespace LeagueManagerClient
         {
             InitializeComponent();
         }
+
+        private void buttonWstecz_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ZarządzanieDrużyną f2 = new ZarządzanieDrużyną(); //this is the change, code for redirect  
+            f2.ShowDialog();
+        }
+
+        private void buttonStrona_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f2 = new Form1(); //this is the change, code for redirect  
+            f2.ShowDialog();
+        }
     }
 }

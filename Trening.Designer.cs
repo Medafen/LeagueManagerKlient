@@ -40,6 +40,8 @@ namespace LeagueManagerClient
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonStrona = new System.Windows.Forms.Button();
+            this.buttonWstecz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -136,11 +138,33 @@ namespace LeagueManagerClient
             this.button1.Text = "Trenuj!";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // buttonStrona
+            // 
+            this.buttonStrona.Location = new System.Drawing.Point(93, 346);
+            this.buttonStrona.Name = "buttonStrona";
+            this.buttonStrona.Size = new System.Drawing.Size(95, 23);
+            this.buttonStrona.TabIndex = 22;
+            this.buttonStrona.Text = "Strona główna";
+            this.buttonStrona.UseVisualStyleBackColor = true;
+            this.buttonStrona.Click += new System.EventHandler(this.buttonStrona_Click);
+            // 
+            // buttonWstecz
+            // 
+            this.buttonWstecz.Location = new System.Drawing.Point(12, 346);
+            this.buttonWstecz.Name = "buttonWstecz";
+            this.buttonWstecz.Size = new System.Drawing.Size(75, 23);
+            this.buttonWstecz.TabIndex = 21;
+            this.buttonWstecz.Text = "Wstecz";
+            this.buttonWstecz.UseVisualStyleBackColor = true;
+            this.buttonWstecz.Click += new System.EventHandler(this.buttonWstecz_Click);
+            // 
             // Trening
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 379);
+            this.Controls.Add(this.buttonStrona);
+            this.Controls.Add(this.buttonWstecz);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -172,5 +196,7 @@ namespace LeagueManagerClient
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonStrona;
+        private System.Windows.Forms.Button buttonWstecz;
     }
 }

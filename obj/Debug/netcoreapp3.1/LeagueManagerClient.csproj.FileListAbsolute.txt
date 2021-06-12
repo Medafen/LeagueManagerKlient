@@ -8,7 +8,6 @@ C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\bin\Debug\netco
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.csprojAssemblyReference.cache
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.Form1.resources
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.Trening.resources
-C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.CentrumTreningowe.resources
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.ZmianaSkladu.resources
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.csproj.GenerateResource.cache
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.AssemblyInfoInputs.cache
@@ -18,3 +17,4 @@ C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netco
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.dll
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.pdb
 C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.genruntimeconfig.cache
+C:\Users\PC\source\repos\LeagueManagerClient\LeagueManagerClient\obj\Debug\netcoreapp3.1\LeagueManagerClient.ZarządzanieDrużyną.resources

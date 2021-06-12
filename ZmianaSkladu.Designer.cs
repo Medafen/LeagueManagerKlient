@@ -35,6 +35,8 @@ namespace LeagueManagerClient
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.buttonWstecz = new System.Windows.Forms.Button();
+            this.buttonStrona = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -93,11 +95,33 @@ namespace LeagueManagerClient
             this.button2.Text = "Usuń";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // buttonWstecz
+            // 
+            this.buttonWstecz.Location = new System.Drawing.Point(13, 454);
+            this.buttonWstecz.Name = "buttonWstecz";
+            this.buttonWstecz.Size = new System.Drawing.Size(75, 23);
+            this.buttonWstecz.TabIndex = 8;
+            this.buttonWstecz.Text = "Wstecz";
+            this.buttonWstecz.UseVisualStyleBackColor = true;
+            this.buttonWstecz.Click += new System.EventHandler(this.buttonWstecz_Click);
+            // 
+            // buttonStrona
+            // 
+            this.buttonStrona.Location = new System.Drawing.Point(91, 454);
+            this.buttonStrona.Name = "buttonStrona";
+            this.buttonStrona.Size = new System.Drawing.Size(95, 23);
+            this.buttonStrona.TabIndex = 9;
+            this.buttonStrona.Text = "Strona główna";
+            this.buttonStrona.UseVisualStyleBackColor = true;
+            this.buttonStrona.Click += new System.EventHandler(this.buttonStrona_Click);
+            // 
             // ZmianaSkladu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 491);
+            this.Controls.Add(this.buttonStrona);
+            this.Controls.Add(this.buttonWstecz);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -120,5 +144,7 @@ namespace LeagueManagerClient
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonWstecz;
+        private System.Windows.Forms.Button buttonStrona;
     }
 }
