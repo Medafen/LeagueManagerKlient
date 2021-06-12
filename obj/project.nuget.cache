@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+KFXtXm8MiwDgHGHUp9O1cwv3zzy9gYsz+Tqa7bDsE+0ZMvH/JPJLahG2RNXXFHtTuw7CZnR/o6so6HlIA6NqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\source\\repos\\LeagueManagerClient\\LeagueManagerClient\\LeagueManagerClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
