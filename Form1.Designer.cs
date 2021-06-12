@@ -40,28 +40,28 @@ namespace LeagueManagerClient
             this.buttonZarzadzanie = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.Rywalizuj = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDruzyna1 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGracz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrzeciwnik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDruzyny)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDruzyna1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewGracz
             // 
             this.dataGridViewGracz.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGracz.Location = new System.Drawing.Point(267, 75);
+            this.dataGridViewGracz.Location = new System.Drawing.Point(205, 75);
             this.dataGridViewGracz.Name = "dataGridViewGracz";
             this.dataGridViewGracz.RowHeadersWidth = 30;
             this.dataGridViewGracz.RowTemplate.Height = 25;
-            this.dataGridViewGracz.Size = new System.Drawing.Size(328, 322);
+            this.dataGridViewGracz.Size = new System.Drawing.Size(319, 306);
             this.dataGridViewGracz.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 57);
+            this.label1.Location = new System.Drawing.Point(283, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 15);
             this.label1.TabIndex = 1;
@@ -79,23 +79,23 @@ namespace LeagueManagerClient
             this.dataGridViewPrzeciwnik.Name = "dataGridViewPrzeciwnik";
             this.dataGridViewPrzeciwnik.RowHeadersWidth = 30;
             this.dataGridViewPrzeciwnik.RowTemplate.Height = 25;
-            this.dataGridViewPrzeciwnik.Size = new System.Drawing.Size(342, 322);
+            this.dataGridViewPrzeciwnik.Size = new System.Drawing.Size(319, 306);
             this.dataGridViewPrzeciwnik.TabIndex = 3;
             // 
             // dataGridViewDruzyny
             // 
             this.dataGridViewDruzyny.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDruzyny.Location = new System.Drawing.Point(1147, 75);
+            this.dataGridViewDruzyny.Location = new System.Drawing.Point(1109, 75);
             this.dataGridViewDruzyny.Name = "dataGridViewDruzyny";
             this.dataGridViewDruzyny.RowTemplate.Height = 25;
-            this.dataGridViewDruzyny.Size = new System.Drawing.Size(240, 322);
+            this.dataGridViewDruzyny.Size = new System.Drawing.Size(187, 306);
             this.dataGridViewDruzyny.TabIndex = 4;
             this.dataGridViewDruzyny.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDruzyny_CellClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1147, 54);
+            this.label2.Location = new System.Drawing.Point(1109, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 15);
             this.label2.TabIndex = 5;
@@ -112,9 +112,9 @@ namespace LeagueManagerClient
             // 
             // buttonZarzadzanie
             // 
-            this.buttonZarzadzanie.Location = new System.Drawing.Point(267, 412);
+            this.buttonZarzadzanie.Location = new System.Drawing.Point(205, 387);
             this.buttonZarzadzanie.Name = "buttonZarzadzanie";
-            this.buttonZarzadzanie.Size = new System.Drawing.Size(328, 23);
+            this.buttonZarzadzanie.Size = new System.Drawing.Size(319, 23);
             this.buttonZarzadzanie.TabIndex = 7;
             this.buttonZarzadzanie.Text = "Zarządzanie drużynami";
             this.buttonZarzadzanie.UseVisualStyleBackColor = true;
@@ -124,7 +124,7 @@ namespace LeagueManagerClient
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(640, 219);
+            this.label5.Location = new System.Drawing.Point(593, 217);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 21);
             this.label5.TabIndex = 9;
@@ -132,21 +132,22 @@ namespace LeagueManagerClient
             // 
             // Rywalizuj
             // 
-            this.Rywalizuj.Location = new System.Drawing.Point(1147, 412);
+            this.Rywalizuj.Location = new System.Drawing.Point(789, 387);
             this.Rywalizuj.Name = "Rywalizuj";
-            this.Rywalizuj.Size = new System.Drawing.Size(240, 23);
+            this.Rywalizuj.Size = new System.Drawing.Size(319, 23);
             this.Rywalizuj.TabIndex = 10;
             this.Rywalizuj.Text = "Rywalizuj";
             this.Rywalizuj.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewDruzyna1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 322);
-            this.dataGridView1.TabIndex = 11;
+            this.dataGridViewDruzyna1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDruzyna1.Location = new System.Drawing.Point(12, 75);
+            this.dataGridViewDruzyna1.Name = "dataGridViewDruzyna1";
+            this.dataGridViewDruzyna1.RowTemplate.Height = 25;
+            this.dataGridViewDruzyna1.Size = new System.Drawing.Size(187, 306);
+            this.dataGridViewDruzyna1.TabIndex = 11;
+            this.dataGridViewDruzyna1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDruzyna1_CellClick);
             // 
             // label10
             // 
@@ -161,9 +162,9 @@ namespace LeagueManagerClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 531);
+            this.ClientSize = new System.Drawing.Size(1347, 531);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewDruzyna1);
             this.Controls.Add(this.Rywalizuj);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonZarzadzanie);
@@ -179,7 +180,7 @@ namespace LeagueManagerClient
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGracz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrzeciwnik)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDruzyny)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDruzyna1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,7 +198,7 @@ namespace LeagueManagerClient
         private System.Windows.Forms.Button buttonZarzadzanie;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Rywalizuj;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewDruzyna1;
         private System.Windows.Forms.Label label10;
     }
 }

@@ -25,12 +25,12 @@ namespace LeagueManagerClient
 
             List<Player> player = JsonConvert.DeserializeObject<List<Player>>(json);
             List<Team> team = JsonConvert.DeserializeObject<List<Team>>(json1);
-
-            foreach(var item in player.Where(a => a.team.name.Equals(teamName)))
-            {
-
-            }
             tabelZawodnicySetRows(dataGridViewGracz);
+            foreach (var item in player.Where(a => a.team.name.Equals(teamName)))
+            {
+                dataGridViewGracz.Rows.Add(item.name, item.nickname, item.surname, item.role);
+            }
+
         }
         void fun1(string teamName)
         {
@@ -40,6 +40,10 @@ namespace LeagueManagerClient
             List<Player> player = JsonConvert.DeserializeObject<List<Player>>(json);
             List<Team> team = JsonConvert.DeserializeObject<List<Team>>(json1);
             tabelZawodnicySetRows(dataGridViewPrzeciwnik);
+            foreach (var item in player.Where(a => a.team.name.Equals(teamName)))
+            {
+                dataGridViewPrzeciwnik.Rows.Add(item.name, item.nickname, item.surname, item.role);
+            }
         }
         void tabelZawodnicySetRows(DataGridView grid)
         {
@@ -49,8 +53,9 @@ namespace LeagueManagerClient
             grid.Columns.Add("nickname", "Nickname");
             grid.Columns.Add("nazwisko", "Nazwisko");
             grid.Columns.Add("rola", "Rola");
+            grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
-        
+
         Danepodreczne danePod = new Danepodreczne();
         public Form1()
         {
@@ -69,22 +74,26 @@ namespace LeagueManagerClient
             List<Player> player = JsonConvert.DeserializeObject<List<Player>>(json);
             List<Team> team = JsonConvert.DeserializeObject<List<Team>>(json1);
 
-            
 
-            
+
+            tabelZawodnicySetRows(dataGridViewGracz);
+            tabelZawodnicySetRows(dataGridViewPrzeciwnik);
 
 
 
             dataGridViewDruzyny.DataSource = team;
-            foreach(var item in player)
+            dataGridViewDruzyna1.DataSource = team;
+            dataGridViewDruzyny.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataGridViewDruzyna1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            foreach (var item in player)
             {
-                dataGridViewGracz.Rows.Add(item.name, item.nickname, item.surname);
+                dataGridViewGracz.Rows.Add(item.name, item.nickname, item.surname, item.role);
             }
             foreach (var item in player)
-                foreach(var item2 in team.Where(a=> a.teamId==item.team.teamId))
-            {
-                dataGridViewPrzeciwnik.Rows.Add(item.name, item.nickname, item.surname);
-            }
+                foreach (var item2 in team.Where(a => a.teamId == item.team.teamId))
+                {
+                    dataGridViewPrzeciwnik.Rows.Add(item.name, item.nickname, item.surname, item.role);
+                }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -102,13 +111,23 @@ namespace LeagueManagerClient
 
         private void dataGridViewDruzyny_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            int index = e.RowIndex;
+            DataGridViewRow wybrany = dataGridViewDruzyny.Rows[index];
+
+
+
+            fun1(wybrany.Cells[1].Value.ToString());
+        }
+
+        private void dataGridViewDruzyna1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
             int index = e.RowIndex;
             DataGridViewRow wybrany = dataGridViewDruzyny.Rows[index];
 
 
 
             fun(wybrany.Cells[1].Value.ToString());
-            
         }
     }
 }
